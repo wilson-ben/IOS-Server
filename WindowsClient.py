@@ -68,7 +68,7 @@ def gethost():
     global host
     global port
 
-    html = urllib.urlopen('https://twitter.com/51stMonarchy').read() # Replace 'USERNAME' with Twitter username
+    html = urllib.urlopen('https://twitter.com/zUSERNAME').read() # Replace 'USERNAME' with Twitter username
     soup = thesoup(html)
 
     x = soup.find("meta", {"name": "description"})['content']
